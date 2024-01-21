@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+@mixin flexCenter($position) {
+  display: flex;
+  justify-content: $position;
+  align-items: center;
+}
+@mixin flexColumn($gap, $position) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: $position;
+  gap: $gap;
+}
+@mixin flexWrap($gap) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+$green: #7f8ac5;
+$bg: #13a884;
+$header: #4c5aa1;
+$gray: #ecf1fb;
+$response: #0c003a;
